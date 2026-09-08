@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- assets/backgrounds/city_stage.svg - stylized pixel-art city background 1920x720 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="720" viewBox="0 0 1920 720">
+  <!-- sky gradient -->
+  <rect width="1920" height="720" fill="#6b83b0" />
+  <rect y="0" width="1920" height="360" fill="url(#skyGrad)" />
+  <defs>
+    <linearGradient id="skyGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#6b83b0" />
+      <stop offset="0.5" stop-color="#b88bbf" />
+      <stop offset="1" stop-color="#2f3b6a" />
+    </linearGradient>
+  </defs>
+
+  <!-- distant skyline blocks (pixel style) -->
+  <g id="skyline">
+    <!-- repeated buildings -->
+    <rect x="200" y="180" width="140" height="220" fill="#2b2d4a" />
+    <rect x="360" y="150" width="120" height="250" fill="#323559" />
+    <rect x="500" y="200" width="180" height="200" fill="#253047" />
+    <rect x="720" y="130" width="220" height="270" fill="#2e3450" />
+    <rect x="980" y="180" width="140" height="220" fill="#2b2d4a" />
+    <rect x="1140" y="160" width="160" height="240" fill="#33385a" />
+    <rect x="1320" y="200" width="200" height="200" fill="#282c46" />
+    <rect x="1560" y="140" width="220" height="260" fill="#2f3554" />
+    <!-- small windows as dots -->
+    <g fill="#f2d08c" opacity="0.85">
+      <rect x="220" y="200" width="10" height="10" />
+      <rect x="250" y="200" width="8" height="8" />
+      <rect x="380" y="180" width="6" height="6" />
+      <rect x="760" y="180" width="8" height="8" />
+      <rect x="1000" y="210" width="8" height="8" />
+      <rect x="1140" y="190" width="8" height="8" />
+    </g>
+  </g>
+
+  <!-- midground buildings and street-level shops -->
+  <g id="midground">
+    <rect x="80" y="360" width="240" height="160" fill="#6b3d3d" />
+    <rect x="360" y="360" width="260" height="160" fill="#5a3a6a" />
+    <rect x="660" y="360" width="380" height="160" fill="#3a4a6a" />
+    <rect x="1080" y="360" width="260" height="160" fill="#6a3d3d" />
+    <rect x="1400" y="360" width="360" height="160" fill="#3b3b5a" />
+
+    <!-- shop signs / neon -->
+    <rect x="420" y="400" width="80" height="30" fill="#ff5fb4" />
+    <rect x="1120" y="410" width="90" height="34" fill="#ffd36b" />
+  </g>
+
+  <!-- foreground sidewalk / street -->
+  <g id="foreground">
+    <rect x="0" y="520" width="1920" height="200" fill="#6b5d4a" />
+    <!-- cracked tiles -->
+    <g fill="#5a4f42" opacity="0.9">
+      <rect x="60" y="548" width="160" height="64" />
+      <rect x="240" y="548" width="160" height="64" />
+      <rect x="420" y="548" width="160" height="64" />
+      <rect x="600" y="548" width="160" height="64" />
+      <rect x="780" y="548" width="160" height="64" />
+      <rect x="960" y="548" width="160" height="64" />
+      <rect x="1140" y="548" width="160" height="64" />
+      <rect x="1320" y="548" width="160" height="64" />
+      <rect x="1500" y="548" width="160" height="64" />
+    </g>
+    <!-- puddles and plants -->
+    <ellipse cx="240" cy="608" rx="32" ry="10" fill="#25455a" />
+    <rect x="720" y="596" width="14" height="18" fill="#2c8f58" />
+    <rect x="1360" y="604" width="20" height="10" fill="#2c8f58" />
+    <!-- lampposts -->
+    <rect x="160" y="420" width="8" height="120" fill="#262626" />
+    <rect x="176" y="420" width="28" height="12" fill="#f6e7b5" />
+    <rect x="1640" y="420" width="8" height="120" fill="#262626" />
+    <rect x="1656" y="420" width="28" height="12" fill="#f6e7b5" />
+  </g>
+
+  <!-- decorative coins (as placeholders) -->
+  <g id="coins" fill="#ffd24d">
+    <circle cx="880" cy="480" r="10" />
+    <circle cx="920" cy="460" r="10" />
+    <circle cx="960" cy="440" r="10" />
+    <circle cx="1000" cy="420" r="10" />
+  </g>
+
+</svg>
