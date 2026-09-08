@@ -1,23 +1,24 @@
-Full-screen pixel stage update
+Endless side-scrolling runner update
 
-I implemented a fixed-stage, full-screen pixel-art scene inspired by the image you provided. Changes pushed:
+I updated the game to a 2D side-view endless runner with the following changes:
 
-- assets/backgrounds/city_stage.svg: a stylized pixel-art city street background (1920x720)
-- assets/sprites/spritesheet_64.svg: 2-row x 6-frame sprite sheet (64x64 frames) placeholders for Sana and Abdullah
-- src/main.js: replaced the runner with a fixed-stage renderer, HUD (score/time/gap/level/hearts), coins across the map, and pixel rendering with nearest-neighbor (imageSmoothing disabled)
-- styles.css: updated layout for full-screen canvas and pixelated scaling
+- A real endless procedural world: obstacles spawn and move left; coins spawn in patterns; speed ramps up over time.
+- Player actions: jump (Space/Up/W/tap) and slide (Down/S or mobile slide button). Sliding shortens the collider so you can dodge low obstacles.
+- Cinematic polish: parallax background tiling, ground tiles, particle effects on collect, shadow, camera-synced distance & level.
+- HUD: score, time, high score (persisted to localStorage), level.
+- Mobile controls: on-screen Jump and Slide buttons (hidden on wide screens).
 
-How to test
-1. Serve the repo and open it in your browser (recommended):
+How to test locally
+1. Serve the repo folder (recommended):
    - python -m http.server 8000
    - open http://localhost:8000
-2. Controls: Space/Up/W to jump. Use the Start button to reset. Press 1/2 to change character selection in other modes (placeholder).
+2. Controls:
+   - Jump: Space / Up Arrow / W (or mobile: JUMP button)
+   - Slide: Down Arrow / S (or mobile: SLIDE button)
+   - Start/Restart: Start / Restart button
 
 Notes & next steps
-- The SVG assets are placeholders and scale crisply. For authentic SNES-style pixel art, I recommend exporting raster PNGs (64x64 frames and a 1920x720 stage) with nearest-neighbor scaling. I can export PNGs and replace the SVGs so pixels remain sharp across browsers and to ensure no anti-aliasing.
-- Next I can:
-  - Replace SVGs with pixel-perfect PNG exports (recommended)
-  - Add detailed pixel portraits, coin animation, and sound/music
-  - Add collision/damage mechanics and polish movement (camera, easing)
+- I used the existing SVG sprite/background placeholders. For pixel-perfect visuals, I still recommend replacing the SVGs with PNG exports. If you want I can export high-quality 64×64 PNG frames and a 1920×720 PNG background and push them next.
+- I can also: add better tile art, animated coins, SFX/music, smooth camera follow, motion blur, and difficulty tuning.
 
-If you want the pixel-perfect PNG replace now, reply "PNG replace" and I will export PNG sprite sheet and background at 64px frames and push them in a follow-up commit.
+If you want me to export PNGs now, reply "PNG replace" and I will push rasterized assets and a final polish commit.

@@ -7,14 +7,28 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>J TEC game</h1>
   <div id="game-container">
-    <canvas id="game" width="800" height="600"></canvas>
-  </div>
-  <div id="hud">
+    <canvas id="game"></canvas>
+    <div id="hud">
+      <div class="left">
+        <div class="score">Score: <span id="scoreVal">0</span></div>
+        <div class="time">Time: <span id="timeVal">00:00</span></div>
+      </div>
+      <div class="center"><div id="msg"></div></div>
+      <div class="right">
+        <div class="high">High: <span id="highVal">0</span></div>
+        <div class="level">Level: <span id="levelVal">1</span></div>
+      </div>
+    </div>
+
+    <div id="mobile-controls">
+      <button id="jumpBtn" class="control">JUMP</button>
+      <button id="slideBtn" class="control">SLIDE</button>
+    </div>
+
     <button id="startBtn">Start / Restart</button>
-    <span id="score">Score: 0</span>
   </div>
+
   <script src="src/main.js"></script>
 </body>
 </html>
