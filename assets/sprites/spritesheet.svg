@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- spritesheet.svg - 2 rows x 6 columns, frames 48x48, top row Sana, bottom row Abdullah -->
+<svg xmlns="http://www.w3.org/2000/svg" width="288" height="96" viewBox="0 0 288 96">
+  <!-- Transparent background -->
+  <rect width="100%" height="100%" fill="none" />
+
+  <!-- Light gray grid preview (cells 48x48) -->
+  <defs>
+    <pattern id="smallGrid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <rect width="48" height="48" fill="transparent" />
+      <path d="M48 0 L48 48" stroke="#d9d9d9" stroke-width="0.8" />
+      <path d="M0 48 L48 48" stroke="#d9d9d9" stroke-width="0.8" />
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#smallGrid)" />
+
+  <!-- Reusable shapes: Sana (top row) and Abdullah (bottom row) drawn as simplified 16-bit style blocks -->
+
+  <!-- Sana frames (top row y = 0) -->
+  <!-- Frame 0 -->
+  <g id="sana0" transform="translate(0,0)">
+    <!-- hair -->
+    <rect x="12" y="6" width="12" height="8" fill="#1b1b2f" rx="1" />
+    <rect x="8" y="10" width="6" height="6" fill="#1b1b2f" rx="1" />
+    <!-- ponytail -->
+    <rect x="22" y="4" width="6" height="10" fill="#1b1b2f" rx="1" />
+    <!-- face -->
+    <rect x="14" y="12" width="10" height="8" fill="#ffd7c9" rx="1" />
+    <!-- eyes -->
+    <rect x="17" y="15" width="2" height="2" fill="#24303a" />
+    <rect x="21" y="15" width="2" height="2" fill="#24303a" />
+    <!-- torso (pink/white tracksuit) -->
+    <rect x="10" y="20" width="28" height="16" fill="#ff66b2" rx="2" />
+    <rect x="18" y="22" width="12" height="10" fill="#ffffff" rx="1" />
+    <!-- emblem -->
+    <rect x="14" y="24" width="4" height="4" fill="#ffd6e6" rx="1" />
+    <!-- left leg (forward) -->
+    <rect x="12" y="36" width="8" height="10" fill="#ff3fa6" rx="1" />
+    <!-- right leg (back) -->
+    <rect x="26" y="40" width="8" height="6" fill="#ffffff" rx="1" />
+  </g>
+
+  <!-- Sana frames 1..5: small variations for running motion (shifted legs and arms) -->
+  <g transform="translate(48,0)">
+    <use href="#sana0" transform="translate(0,0) scale(1)" />
+    <!-- adjust legs to simulate motion -->
+    <rect x="12" y="38" width="8" height="8" fill="#ff3fa6" rx="1" />
+    <rect x="26" y="34" width="8" height="12" fill="#ffffff" rx="1" />
+  </g>
+  <g transform="translate(96,0)">
+    <use href="#sana0" transform="translate(0,0) scale(1)" />
+    <rect x="12" y="34" width="8" height="12" fill="#ff3fa6" rx="1" />
+    <rect x="26" y="38" width="8" height="8" fill="#ffffff" rx="1" />
+  </g>
+  <g transform="translate(144,0)">
+    <use href="#sana0" transform="translate(0,0) scale(1)" />
+    <rect x="10" y="36" width="10" height="10" fill="#ff3fa6" rx="1" />
+    <rect x="26" y="40" width="8" height="6" fill="#ffffff" rx="1" />
+  </g>
+  <g transform="translate(192,0)">
+    <use href="#sana0" transform="translate(0,0) scale(1)" />
+    <rect x="12" y="36" width="8" height="10" fill="#ff3fa6" rx="1" />
+    <rect x="26" y="40" width="8" height="6" fill="#ffffff" rx="1" />
+    <rect x="18" y="22" width="12" height="8" fill="#ffffff" rx="1" />
+  </g>
+  <g transform="translate(240,0)">
+    <use href="#sana0" transform="translate(0,0) scale(1)" />
+    <rect x="12" y="40" width="8" height="6" fill="#ff3fa6" rx="1" />
+    <rect x="26" y="36" width="8" height="10" fill="#ffffff" rx="1" />
+  </g>
+
+  <!-- Abdullah frames (bottom row y = 48) -->
+  <!-- base shape -->
+  <g id="abd0" transform="translate(0,48)">
+    <!-- hair -->
+    <rect x="12" y="6" width="16" height="8" fill="#11121a" rx="1" />
+    <!-- face -->
+    <rect x="14" y="14" width="10" height="8" fill="#ffd7c9" rx="1" />
+    <rect x="17" y="17" width="2" height="2" fill="#24303a" />
+    <rect x="21" y="17" width="2" height="2" fill="#24303a" />
+    <!-- jacket cyan/white -->
+    <rect x="10" y="22" width="28" height="16" fill="#1fe0ff" rx="2" />
+    <rect x="18" y="22" width="12" height="10" fill="#ffffff" rx="1" />
+    <!-- star logo -->
+    <rect x="14" y="24" width="4" height="4" fill="#ffffff" rx="1" />
+    <!-- left leg -->
+    <rect x="12" y="36" width="8" height="10" fill="#0a2a3a" rx="1" />
+    <!-- right leg -->
+    <rect x="26" y="40" width="8" height="6" fill="#0a2a3a" rx="1" />
+  </g>
+
+  <!-- Abdullah frames 1..5: running variations slightly behind Sana (shifted posture) -->
+  <g transform="translate(48,48)">
+    <use href="#abd0" />
+    <rect x="12" y="38" width="8" height="8" fill="#0a2a3a" rx="1" />
+    <rect x="26" y="34" width="8" height="12" fill="#0a2a3a" rx="1" />
+  </g>
+  <g transform="translate(96,48)">
+    <use href="#abd0" />
+    <rect x="12" y="34" width="8" height="12" fill="#0a2a3a" rx="1" />
+    <rect x="26" y="38" width="8" height="8" fill="#0a2a3a" rx="1" />
+  </g>
+  <g transform="translate(144,48)">
+    <use href="#abd0" />
+    <rect x="10" y="36" width="10" height="10" fill="#0a2a3a" rx="1" />
+    <rect x="26" y="40" width="8" height="6" fill="#0a2a3a" rx="1" />
+  </g>
+  <g transform="translate(192,48)">
+    <use href="#abd0" />
+    <rect x="12" y="36" width="8" height="10" fill="#0a2a3a" rx="1" />
+    <rect x="26" y="40" width="8" height="6" fill="#0a2a3a" rx="1" />
+  </g>
+  <g transform="translate(240,48)">
+    <use href="#abd0" />
+    <rect x="12" y="40" width="8" height="6" fill="#0a2a3a" rx="1" />
+    <rect x="26" y="36" width="8" height="10" fill="#0a2a3a" rx="1" />
+  </g>
+
+  <!-- small labels (not visible in transparent trimmed usage) -->
+  <text x="8" y="14" font-family="monospace" font-size="6" fill="rgba(0,0,0,0.05)">SANA</text>
+  <text x="8" y="62" font-family="monospace" font-size="6" fill="rgba(0,0,0,0.05)">ABDULLAH</text>
+</svg>

@@ -1,25 +1,14 @@
-J TEC game — Cinematic update
+Sprites and character integration
 
-I updated the starter game to feel more cinematic and responsive. Changes include:
+I added a two-row sprite sheet and integrated it into the game so you can select between Sana (key 1) and Abdullah (key 2). Details:
 
-- Responsive canvas sizing for different screen widths
-- Parallax background layers (sky, mountains, clouds, foreground) for depth
-- Particle effects on jump and landing for tactile feel
-- Squash/stretch animation on the player when landing
-- Camera shake and a heavier hit impact when you collide with an obstacle
-- Simple generated sound effects (using WebAudio) for jump and hit events
-- Improved obstacle visuals and lighting highlights
+- assets/sprites/spritesheet.svg — 6-frame top row Sana, 6-frame bottom row Abdullah (48x48 frames). The sheet includes a light-gray grid preview and transparent background.
+- src/main.js updated to load the sprite sheet, animate the running frames, and draw the selected character with squash/stretch and particle effects.
 
-How to test
-1. Serve the repo and open the game (recommended):
-   - python -m http.server 8000
-   - open http://localhost:8000
-2. Controls: Space / Up / W to jump. Click Start to begin.
+Controls:
+- 1 = Sana
+- 2 = Abdullah
+- Space / Up / W = jump
+- Start button = start/restart
 
-Next enhancements I can add (pick one):
-- Add art and sprite assets (I can add a small art pack)
-- Add mobile touch controls and virtual buttons
-- Add music, more advanced audio, and SFX files
-- Add menu, high-score persistence (localStorage), and pause
-
-If you want a specific cinematic effect (e.g., slow-motion on hit, dynamic camera follow, or intro animation lengthening), tell me which and I'll implement it.
+If you want a PNG instead of SVG, or higher detail pixel art, I can produce a PNG export (I can generate a higher-res raster version and add it to assets) — confirm if you want a PNG and what frame size (32/48/64).
